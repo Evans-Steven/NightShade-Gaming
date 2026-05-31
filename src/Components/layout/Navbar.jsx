@@ -52,7 +52,10 @@ export default function Navbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <Button variant="primary">🎮 Join Discord</Button>
+                            <Button variant="primary">
+                                <span className="sm:hidden">Discord</span>
+                                <span className="hidden sm:inline">🎮 Join Discord</span>
+                            </Button>
                         </a>
                     </div>
 
