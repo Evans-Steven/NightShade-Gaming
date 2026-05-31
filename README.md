@@ -38,6 +38,10 @@ Join the NightShade Gaming Discord:
 
 https://discord.gg/nightshade-servers-561094823231356959
 
+## Status
+
+🚀 Live and actively maintained.
+
 ## Road Map
 
 ### Completed
