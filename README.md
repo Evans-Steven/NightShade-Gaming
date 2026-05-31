@@ -1,16 +1,101 @@
-# React + Vite
+# NightShade Gaming
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern multi-game community website built for NightShade Gaming.
 
-Currently, two official plugins are available:
+<img src="./screenshot1.png" alt="NightShade Gaming Homepage" width="900" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Website
 
-## React Compiler
+https://nightshade-gaming.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About
 
-## Expanding the ESLint configuration
+NightShade Gaming is a multi-game community focused on teamwork, events, progression, and creating a welcoming place for players who want more than random lobbies.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Supported community games currently include:
+
+* 7 Days to Die
+* Project Zomboid
+* Conan Exiles
+* SCUM
+
+<img src="./screenshot2.png" alt="NightShade Gaming Homepage" width="900" />
+
+## Features
+
+* Responsive modern design
+* Mobile-friendly experience
+* Community-focused landing page
+* Interactive game carousel
+* Custom NightShade-themed artwork
+* Discord integration
+* Automatic deployment through Vercel
+
+
+## Community
+
+Join the NightShade Gaming Discord:
+
+https://discord.gg/nightshade-servers-561094823231356959
+
+## Road Map
+
+### Completed
+✅ Hero redesign
+✅ Community carousel
+✅ Mobile responsiveness
+✅ CTA redesign
+✅ Footer redesign
+✅ Custom game artwork
+✅ GitHub deployment
+✅ Vercel deployment
+
+### Planned
+🔲 Events section
+🔲 Community screenshots
+🔲 SEO optimization
+🔲 Custom domain
+🔲 Discord widget
+🔲 News & announcements
+
+### Future
+🔲 Dynamic Discord integration
+🔲 Community applications
+🔲 Event calendar
+
+## Built With
+
+* React
+* Vite
+* Tailwind CSS
+* Framer Motion
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Create production build:
+
+```bash
+npm run build
+```
+
+## Deployment
+
+This project is automatically deployed through Vercel.
+
+Any changes pushed to the main branch are automatically built and deployed.
+
+---
+
+NightShade Gaming © 2019–2026
