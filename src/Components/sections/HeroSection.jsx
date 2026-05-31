@@ -7,13 +7,13 @@ const discordUrl = "https://discord.gg/nightshade-servers-561094823231356959";
 
 export default function HeroSection() {
     return (
-        <section className="relative overflow-hidden border-b border-purple-900/40 py-20 lg:py-24">
+        <section className="relative min-h-[calc(100vh-72px)] overflow-hidden border-b border-purple-900/40 py-10 sm:py-16 lg:py-24">
 
             {/* HERO IMAGE */}
             <img
                 src={HeroBg}
                 alt=""
-                className="absolute inset-0 h-full w-full object-cover opacity-90"
+                className="absolute inset-0 h-full w-full object-cover object-[center_35%] opacity-90 sm:object-center"
             />
 
             {/* DARK OVERLAYS */}
@@ -29,11 +29,11 @@ export default function HeroSection() {
             <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
                 <motion.img
                     src={NightShadeLogo}
-                    alt="NightShade Gaming logo"
+                    alt="NightShade Gaming"
                     initial={{ opacity: 0, y: 20, scale: 0.95 }}
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="mb-2 w-full max-w-xs drop-shadow-[0_0_45px_rgba(168,85,247,0.65)]"
+                    className="mb-2 max-w-[220px] sm:max-w-[320px]"
                 />
 
                 <motion.div
@@ -45,7 +45,7 @@ export default function HeroSection() {
                         SURVIVAL • SANDBOX • CO-OP • COMMUNITY
                     </p>
 
-                    <h1 className="mx-auto max-w-4xl text-4xl font-black uppercase leading-[0.85] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                    <h1 className="mx-auto max-w-4xl text-3xl font-black uppercase leading-[0.9] tracking-tight text-white sm:text-6xl lg:text-7xl">
                         Built for players who want more than{" "}
                         <span className="text-purple-400 drop-shadow-[0_0_18px_rgba(168,85,247,0.7)]">
                             random lobbies.
@@ -59,7 +59,7 @@ export default function HeroSection() {
 
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
                         <a href={discordUrl} target="_blank" rel="noopener noreferrer">
-                            <Button variant="primary">Join Discord</Button>
+                            <Button variant="primary">🎮 Join Discord</Button>
                         </a>
 
                         <a href="#games">
@@ -67,7 +67,7 @@ export default function HeroSection() {
                         </a>
                     </div>
 
-                    <div className="mx-auto mt-10 grid max-w-4xl gap-4 rounded-2xl border border-purple-500/30 bg-black/45 p-5 shadow-[0_0_45px_rgba(124,58,237,0.25)] backdrop-blur-md sm:grid-cols-2 lg:grid-cols-4">
+                    <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 rounded-2xl border border-purple-500/30 bg-black/45 p-5 shadow-[0_0_45px_rgba(124,58,237,0.25)] backdrop-blur-md sm:grid-cols-4">
                         <div>
                             <p className="text-2xl font-bold text-green-400">4+</p>
                             <p className="mt-1 text-xs uppercase tracking-wider text-gray-400">

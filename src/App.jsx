@@ -3,6 +3,7 @@ import HeroSection from "./Components/sections/HeroSection";
 import StatsBar from "./components/sections/StatsBar";
 import GameCarousel from "./components/sections/GameCarousel";
 import { GameCard } from "./components/cards/GameCard";
+import NightShadeBillboard from "./components/assets/nightshade-billboard.png";
 
 function App() {
   const games = [
@@ -40,54 +41,67 @@ function App() {
       <StatsBar/>
       
       {/*Divider*/}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent my-12 max-w-7xl mx-auto opacity-70" />
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent my-6 sm:my-12 max-w-7xl mx-auto opacity-70" />
 
       <GameCarousel/>
 
-      <section id="community" className="py-20">
+      <section id="community" className="py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="rounded-2xl border border-purple-900/40 bg-purple-950/20 p-8 shadow-[0_0_40px_rgba(124,58,237,0.15)]">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-green-400">
-              Join the Community
-            </p>
+          <div className="grid gap-8 overflow-hidden rounded-3xl border border-purple-500/30 bg-black/40 p-6 shadow-[0_0_50px_rgba(124,58,237,0.18)] backdrop-blur-md lg:grid-cols-[0.9fr_1fr_1.1fr] lg:p-8">
 
-            <h2 className="text-3xl font-bold text-white md:text-4xl">
-              Built for players who want more than random lobbies.
-            </h2>
+            <div>
+              <p className="mb-4 text-sm uppercase tracking-[0.35em] text-green-400">
+                Join the Community
+              </p>
 
-            <p className="mt-4 max-w-3xl text-gray-400">
-              NightShade Gaming is a multi-game community focused on teamwork,
-              events, long-term progression, and finding people who actually want
-              to play together.
-            </p>
+              <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
+                Built for players who want more than{" "}
+                <span className="text-purple-400">random lobbies.</span>
+              </h2>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
-              <div className="rounded-xl border border-purple-800/40 bg-black/30 p-5">
-                <h3 className="text-lg font-semibold text-purple-300">
-                  Find Your Squad
-                </h3>
-                <p className="mt-2 text-sm text-gray-400">
-                  Connect with players across survival, sandbox, and co-op games.
-                </p>
-              </div>
+              <p className="mt-5 text-gray-400">
+                We focus on teamwork, events, long-term progression, and finding
+                people who actually want to play together.
+              </p>
+            </div>
 
-              <div className="rounded-xl border border-green-800/40 bg-black/30 p-5">
+            <div className="space-y-5 border-purple-500/20 lg:border-l lg:border-purple-500/20 lg:pl-10">
+              <div>
                 <h3 className="text-lg font-semibold text-green-300">
-                  Join Events
+                  👥 Find Your Squad
                 </h3>
-                <p className="mt-2 text-sm text-gray-400">
-                  Take part in game nights, challenges, community sessions, and future events.
+                <p className="mt-1 text-sm text-gray-400">
+                  Connect with players across multiple games and time zones.
                 </p>
               </div>
 
-              <div className="rounded-xl border border-purple-800/40 bg-black/30 p-5">
+              <div>
                 <h3 className="text-lg font-semibold text-purple-300">
-                  Stay Connected
+                  📅 Join Events
                 </h3>
-                <p className="mt-2 text-sm text-gray-400">
-                  Discord keeps the community organized with updates, channels, and announcements.
+                <p className="mt-1 text-sm text-gray-400">
+                  Take part in game nights, challenges, community sessions, and more.
                 </p>
               </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-green-300">
+                  💬 Stay Connected
+                </h3>
+                <p className="mt-1 text-sm text-gray-400">
+                  Discord keeps everything organized with channels, roles, and updates.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative min-h-[260px] overflow-hidden rounded-2xl border border-purple-500/30 lg:min-h-full">
+              <img
+                src={NightShadeBillboard}
+                alt="NightShade billboard saying We Game Together"
+                className="absolute inset-0 h-full w-full object-cover object-[65%_center]"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/20" />
             </div>
           </div>
         </div>
@@ -117,7 +131,7 @@ function App() {
               rel="noopener noreferrer"
               className="rounded-xl bg-green-500 px-6 py-3 font-semibold text-black shadow-[0_0_20px_rgba(34,197,94,0.35)] transition hover:bg-green-400"
             >
-              Join Discord
+              🎮 Join Discord
             </a>
           </div>
         </div>
