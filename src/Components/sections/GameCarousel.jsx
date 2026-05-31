@@ -60,7 +60,7 @@ export default function GameCarousel() {
                             className="
                                 hidden lg:block
                                 absolute
-                                left-[-38px]
+                                left-2 xl:left-[-38px]
                                 top-1/2
                                 -ztranslate-y-1/2
                                 z-30
@@ -81,7 +81,7 @@ export default function GameCarousel() {
                             className="
                                 hidden lg:block
                                 absolute
-                                right-[-38px]
+                                right-2 xl:right-[-38px]
                                 top-1/2
                                 -ztranslate-y-1/2
                                 z-30

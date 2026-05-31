@@ -2,37 +2,9 @@ import Navbar from "./components/layout/Navbar";
 import HeroSection from "./Components/sections/HeroSection";
 import StatsBar from "./components/sections/StatsBar";
 import GameCarousel from "./components/sections/GameCarousel";
-import { GameCard } from "./components/cards/GameCard";
 import NightShadeBillboard from "./components/assets/nightshade-billboard.png";
 
 function App() {
-  const games = [
-    {
-      title: "7 Days to Die",
-      description: "Zombie survival, exploration, and base building.",
-      image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e",
-    },
-    {
-      title: "Project Zomboid",
-      description: "Hardcore survival and cooperative gameplay.",
-      image:
-        "https://images.unsplash.com/photo-1511512578047-dfb367046420",
-    },
-    {
-      title: "Conan Exiles",
-      description: "Open-world survival with clans and progression.",
-      image:
-        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
-    },
-    {
-      title: "Scum",
-      description: "Team survival, PvP encounters, and long-term progression.",
-      image:
-        "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
-    },
-  ];
-
   return (
     <div className="bg-night min-h-screen text-white">
 
@@ -41,11 +13,11 @@ function App() {
       <StatsBar/>
       
       {/*Divider*/}
-      <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent my-6 sm:my-12 max-w-7xl mx-auto opacity-70" />
+      <div className="h-px bg-gradient-to-r from-transparent via-purple-500/50 to-transparent my-4 sm:my-8 max-w-7xl mx-auto opacity-70" />
 
       <GameCarousel/>
 
-      <section id="community" className="py-16 sm:py-20">
+      <section id="community" className="py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-8 overflow-hidden rounded-3xl border border-purple-500/30 bg-black/40 p-6 shadow-[0_0_50px_rgba(124,58,237,0.18)] backdrop-blur-md lg:grid-cols-[0.9fr_1fr_1.1fr] lg:p-8">
 
@@ -107,7 +79,7 @@ function App() {
         </div>
       </section>
 
-      <section id="discord" className="py-16">
+      <section id="discord" className="py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-green-500/30 bg-gradient-to-r from-purple-950/40 to-green-950/20 p-8 shadow-[0_0_40px_rgba(34,197,94,0.12)] md:flex-row md:items-center">
             <div>
