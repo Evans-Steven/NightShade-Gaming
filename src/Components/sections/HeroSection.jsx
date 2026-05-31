@@ -69,35 +69,6 @@ export default function HeroSection() {
                                 </a>
                             </div>
 
-                            <div className="mx-auto mt-8 grid max-w-4xl grid-cols-2 gap-4 rounded-2xl border border-purple-500/30 bg-black/45 p-5 shadow-[0_0_45px_rgba(124,58,237,0.25)] backdrop-blur-md sm:grid-cols-4">
-                                <div>
-                                    <p className="text-2xl font-bold text-green-400">4+</p>
-                                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-400">
-                                        Games Supported
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <p className="text-2xl font-bold text-purple-400">Events</p>
-                                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-400">
-                                        Community Nights
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <p className="text-2xl font-bold text-green-400">Discord</p>
-                                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-400">
-                                        Community Hub
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <p className="text-2xl font-bold text-purple-400">100%</p>
-                                    <p className="mt-1 text-xs uppercase tracking-wider text-gray-400">
-                                        Community Driven
-                                    </p>
-                                </div>
-                            </div>
                         </motion.div>
                     </div>
                     </div>
