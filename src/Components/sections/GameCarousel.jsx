@@ -13,21 +13,25 @@ export default function GameCarousel() {
             title: "7 Days to Die",
             description: "Zombie survival, exploration, and base building.",
             image: SevenDaysImage,
+            url: "https://7daystodie.com/",
         },
         {
             title: "Project Zomboid",
             description: "Hardcore survival and cooperative gameplay.",
             image: ZomboidImage,
+            url: "https://projectzomboid.com/",
         },
         {
             title: "Conan Exiles",
             description: "Open-world survival with clans and progression.",
             image: ConanImage,
+            url: "https://www.conanexiles.com/",
         },
         {
             title: "SCUM",
             description: "Team survival, PvP encounters, and long-term progression.",
             image: ScumImage,
+            url: "https://scumgame.com/",
         },
     ];
 

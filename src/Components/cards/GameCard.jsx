@@ -2,7 +2,7 @@ import { GlowCard } from "../ui/Glowcard";
 import { Button } from "../ui/Button";
 import {motion} from "framer-motion";
 
-export function GameCard({ title, description, image }) {
+export function GameCard({ title, description, image, url }) {
     return (
         <motion.div
             whileHover={{ y: -6 }}
@@ -29,11 +29,11 @@ export function GameCard({ title, description, image }) {
                     </p>
 
                 {/* CTA */}
-                    <Button
-                        variant="outline"
-                        className="w-full">
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                        <Button variant="outline" className="w-full">
                             Learn More
-                    </Button>
+                        </Button>
+                    </a>
             </div>
         </GlowCard>
         </motion.div>
