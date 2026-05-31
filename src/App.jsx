@@ -1,5 +1,5 @@
 import Navbar from "./components/layout/Navbar";
-import HeroSection from "./Components/sections/HeroSection";
+import HeroSection from "./components/sections/HeroSection";
 import StatsBar from "./components/sections/StatsBar";
 import GameCarousel from "./components/sections/GameCarousel";
 import NightShadeBillboard from "./components/assets/nightshade-billboard.png";
