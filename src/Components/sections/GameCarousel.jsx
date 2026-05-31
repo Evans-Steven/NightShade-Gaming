@@ -1,5 +1,9 @@
 import { useRef } from "react";
 import { GameCard } from "../cards/GameCard";
+import SevenDaysImage from "../assets/games/SevenDays.png";
+import ZomboidImage from "../assets/games/ProjectZomboid.png";
+import ConanImage from "../assets/games/ConanExiles.png";
+import ScumImage from "../assets/games/Scum.png";
 
 export default function GameCarousel() {
     const carouselRef = useRef(null);
@@ -8,22 +12,22 @@ export default function GameCarousel() {
         {
             title: "7 Days to Die",
             description: "Zombie survival, exploration, and base building.",
-            image: "https://images.unsplash.com/photo-1542751371-adc38448a05e",
+            image: SevenDaysImage,
         },
         {
             title: "Project Zomboid",
             description: "Hardcore survival and cooperative gameplay.",
-            image: "https://images.unsplash.com/photo-1511512578047-dfb367046420",
+            image: ZomboidImage,
         },
         {
             title: "Conan Exiles",
             description: "Open-world survival with clans and progression.",
-            image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
+            image: ConanImage,
         },
         {
             title: "SCUM",
             description: "Team survival, PvP encounters, and long-term progression.",
-            image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8",
+            image: ScumImage,
         },
     ];
 
