@@ -3,6 +3,7 @@ import HeroSection from "./Components/sections/HeroSection";
 import StatsBar from "./components/sections/StatsBar";
 import GameCarousel from "./components/sections/GameCarousel";
 import NightShadeBillboard from "./components/assets/nightshade-billboard.png";
+import NightShadeGaming from "./components/assets/nightshade-gaming.png";
 
 function App() {
   return (
@@ -81,34 +82,109 @@ function App() {
 
       <section id="discord" className="py-10 sm:py-14">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="flex flex-col items-start justify-between gap-6 rounded-2xl border border-green-500/30 bg-gradient-to-r from-purple-950/40 to-green-950/20 p-8 shadow-[0_0_40px_rgba(34,197,94,0.12)] md:flex-row md:items-center">
-            <div>
-              <p className="mb-3 text-sm uppercase tracking-[0.3em] text-green-400">
-                Ready to join?
-              </p>
+          <div className="relative overflow-hidden rounded-3xl border border-green-500/30 bg-black/40 p-6 shadow-[0_0_45px_rgba(34,197,94,0.14)] backdrop-blur-md sm:p-8">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-950/40 via-transparent to-green-950/30" />
 
-              <h2 className="text-3xl font-bold text-white">
-                Step into the NightShade community.
-              </h2>
+            <div className="relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+              <div className="flex items-start gap-5">
+                <div className="hidden rounded-2xl border border-purple-500/30 bg-purple-950/40 p-4 text-5xl shadow-[0_0_30px_rgba(168,85,247,0.25)] sm:block">
+                  🎮
+                </div>
 
-              <p className="mt-3 max-w-2xl text-gray-400">
-                Join the Discord to connect with other players, follow announcements,
-                participate in events, and help shape what comes next.
-              </p>
+                <div>
+                  <p className="mb-2 text-sm uppercase tracking-[0.35em] text-green-400">
+                    Ready to join?
+                  </p>
+
+                  <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl">
+                    Step into the{" "}
+                    <span className="text-purple-400">NightShade</span> community.
+                  </h2>
+
+                  <p className="mt-3 max-w-2xl text-gray-400">
+                    Join the Discord, introduce yourself, follow announcements, and
+                    help shape what comes next.
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="https://discord.gg/nightshade-servers-561094823231356959"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full rounded-xl bg-green-500 px-8 py-4 text-center font-semibold text-black shadow-[0_0_25px_rgba(34,197,94,0.35)] transition hover:bg-green-400 md:w-auto"
+              >
+                🎮 Join Discord
+              </a>
             </div>
-
-            <a
-              href="https://discord.gg/nightshade-servers-561094823231356959"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-green-500 px-6 py-3 font-semibold text-black shadow-[0_0_20px_rgba(34,197,94,0.35)] transition hover:bg-green-400"
-            >
-              🎮 Join Discord
-            </a>
           </div>
         </div>
       </section>
 
+      <footer className="border-t border-purple-900/40 py-10">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="grid gap-8 rounded-3xl border border-purple-500/20 bg-black/30 p-6 shadow-[0_0_40px_rgba(124,58,237,0.12)] backdrop-blur-md md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+
+            <div>
+              <div className="mb-4 flex items-center gap-3">
+                <img
+                  src={NightShadeGaming}
+                  alt="NightShade Gaming"
+                  className="h-14 w-auto drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]"
+                />
+
+                <div>
+                  <h3 className="text-xl font-bold text-white">
+                    NightShade Gaming
+                  </h3>
+                  <p className="text-sm text-purple-300">
+                    More than random lobbies.
+                  </p>
+                </div>
+              </div>
+
+              <p className="max-w-sm text-sm text-gray-400">
+                A multi-game community built around teamwork, events, progression,
+                and finding people who actually want to play together.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="mb-4 text-sm uppercase tracking-[0.3em] text-green-400">
+                Quick Links
+              </h4>
+
+              <div className="flex flex-col gap-2 text-sm text-gray-400">
+                <a href="#games" className="transition hover:text-green-400">
+                  Games
+                </a>
+                <a href="#community" className="transition hover:text-green-400">
+                  Community
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="mb-4 text-sm uppercase tracking-[0.3em] text-green-400">
+                Join Us
+              </h4>
+
+              <a
+                href="https://discord.gg/nightshade-servers-561094823231356959"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-xl border border-green-500/40 px-5 py-3 text-sm font-semibold text-green-300 transition hover:bg-green-500/10 hover:text-white"
+              >
+                🎮 Join Discord
+              </a>
+            </div>
+          </div>
+
+          <p className="mt-6 text-center text-xs text-gray-500">
+            © 2019-2026 NightShade Gaming. Built for community. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
