@@ -1,4 +1,4 @@
-import { GlowCard } from "../ui/Glowcard";
+import { GlowCard } from "../ui/GlowCard";
 import { Button } from "../ui/Button";
 import {motion} from "framer-motion";
 
